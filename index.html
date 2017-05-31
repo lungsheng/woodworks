@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>my-woodworks</title>
+<link href="js/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script>
+$(function(){
+	var imgarray=["a1.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg","a6.jpg","a7.jpg","a8.jpg","a9.jpg","a10.jpg","a11.jpg","a12.jpg","a13.jpg","a14.jpg","a15.jpg","a16.jpg","a17.jpg","a18.jpg","a19.jpg","a20.jpg","a21.jpg","a22.jpg","a23.jpg","a24.JPG","a25.jpg","a26.jpg","a27.JPG","a28.jpg","a29.JPG","a30.JPG","a31.jpg","a32.jpg","a33.jpg","a34.jpg","a35.JPG","a36.jpg","a37.jpg"];
+	var s="";
+	var position="";
+	var imglength=37;
+	putimg();
+function putimg(){
+	s="";
+	for(var i=0;i<imglength;i++){
+ s=s+"<li><center><a  href='#'><div id='le'><img  src="+position+imgarray[i]+" ></div></a></center></li>"
+		}
+
+	$("#board").html(s);
+}
+	})
+</script>
+<style>
+#le img{
+	border: #666 solid 15px;
+	width:80% ;
+	height:320px;
+	transition:all 1s;
+	border-radius:10px;
+	-webkit-transition: all 1s;
+	}
+#le img:hover{
+	border:#FF0 solid 20px;
+	opacity:1;
+	width:90%;
+	height:400px;
+}
+ a {font-size:32px;}
+</style>
+</head> 
+<body ">
+
+
+<div data-role="page" id="page" data-theme="e">
+	<div data-role="header" data-theme="e" >
+		<h1>my-woodworks</h1>
+	</div>
+	<div data-role="content" data-theme="e">	
+<ul data-role="listview" id="board">
+			<li><a href="#"></a></li>
+           
+	  </ul>		
+	</div>
+	<div data-role="footer" data-theme="e">
+		<h4>Lee,s works</h4>
+	</div>
+</div>
+
+
+
+</body>
+</html>
