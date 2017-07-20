@@ -15,7 +15,7 @@ $(function(){
 	var position="";
 	var imglength=38;
        putimg();	
-	$("#sound2").jmp3();
+	
 function putimg(){
 	s= "<li><span id="sound2">MUSIC-GO</span></li>";
 	for(var i=0;i<imglength;i++){
@@ -27,7 +27,7 @@ function putimg(){
 			}
 		}
 
-	$("#board").html(s);
+	$("#board").html(s);$("#sound2").jmp3();
 }
 	})
 </script>
