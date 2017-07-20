@@ -6,6 +6,7 @@
 <link href="js/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jquery.jmp3.js"></script>
 <script>
 $(function(){
 	var imgarray=["a1.jpg","a2.jpg","a3.jpg","a4.jpg","a5.jpg","a6.jpg","a7.jpg","a8.jpg","a9.jpg","a10.jpg","a11.jpg","a12.jpg","a13.jpg","a14.jpg","a15.jpg","a16.jpg","a17.jpg","a18.jpg","a19.jpg","a20.jpg","a21.jpg","a22.jpg","a23.jpg","a24.JPG","a25.jpg","a26.jpg","a27.JPG","a28.jpg","a29.JPG","a30.JPG","a31.jpg","a32.jpg","a33.jpg","a34.jpg","a35.JPG","a36.jpg","a37.jpg","a38.jpg"];
@@ -13,9 +14,10 @@ $(function(){
 	var s="";
 	var position="";
 	var imglength=38;
-	putimg();
+       putimg();	
+	$("#sound2").jmp3();
 function putimg(){
-	s="";
+	s= "<li><span id="sound2">MUSIC-GO</span></li>";
 	for(var i=0;i<imglength;i++){
 	if(scale[i]>1){
  s=s+"<li><center><a  href='#'><div id='le'><img  src="+position+imgarray[i]+" width=80% height=45%></div></a></center></li>"
