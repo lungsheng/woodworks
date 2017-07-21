@@ -31,7 +31,7 @@
 ***/
 jQuery.fn.jmp3 = function(passedOptions){
 	// hard-wired options
-	var playerpath = "media/flash/smp/";					// SET THIS FIRST: path to singlemp3player.swf
+	var playerpath = "";//"media/flash/smp/";					// SET THIS FIRST: path to singlemp3player.swf
 
 	// passable options
 	var options = {
